@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-">
+                    <a class="pgLink" href="ImgSearch.html">Image Search</a>
+                </div>
+                <div class="col-">
+                    <a class="pgLink" href="AdvSearch.html">Advanced Search</a>              
+                </div>          
+            </div>
+             <!--just a empty row to create some spacing between nav links and search bars-->
+            <div class="row"> 
+                <div style="height: 200px;"></div>
+            </div>        
+        <!--new code, simple JS implementation, much more efficient-->
+            <form id=schForm action="" method="GET">
+                <div class="row justify-content-center"><input type="text" name="q" class="schBar"></div>
+                <div class="row justify-content-center">
+                    <div class="col-sd">
+                        <input type="button" value="Google Search" class="sch" onclick="schAction()">
+                    </div>
+                    <div class="col-sd">
+                        <input type="button" value="I'm Feeling Lucky" class="ifl" onclick="iflAction()"> 
+                        <input type="hidden" name=""value="" id="hiddenParam">
+                    </div>
+                </div>        
+            </form>
+        </div>
+        <script>
+            var form = document.getElementById("schForm");
+            var actionUrl = "https://google.com/search";
+            function schAction() {
+                form.action = actionUrl;
+                form.submit();
+            }
+            function iflAction() {
+                var hiddenInput = document.getElementById("hiddenParam");
+                hiddenInput.name = "btnI";
+                hiddenInput.value = "1";
+                form.action = actionUrl;
+                form.submit();
+            }
+        </script>
+    </body>
+</html>

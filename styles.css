@@ -1,0 +1,61 @@
+.schForm {
+  text-align: center;
+  font-size: 18px;
+}
+
+.schBar {
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  width: 482px;
+}
+
+.sch, .ifl {
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+.advInputFields {
+  text-align: left;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.advSearchInput {
+  min-width: 120px;
+  width: 300px;
+  height: 40px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+.pgLink {
+  height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 10px;
+}
+
+.advSubmitBtn {
+  background-color: #4d90fe;
+  color: white;
+  border: 1px solid #3079ed;
+  vertical-align: middle;
+  padding: 4px;
+  height: 30px;
+  min-width: 120px;
+  margin: 10px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+/*# sourceMappingURL=styles.css.map */

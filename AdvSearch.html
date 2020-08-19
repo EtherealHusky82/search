@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha684-Vkoo8x4CGsO6+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf26Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-">
+                    <a class="pgLink" href="index.html">Google Search</a>
+                </div>
+                <div class="col-">
+                    <a class="pgLink" href="ImgSearch.html">Image Search</a>
+                </div>
+            </div>  
+            <form action="https://www.google.com/search"> 
+                <div class="row">
+                    <div class="col-sm" style="font-size:20px;font-family:arial,sans-serif;color:#d96025;">Advanced Search</div>
+                </div>
+                <div class="row"></div>
+                <div class="row">
+                    <div class="col-sm">Find pages with...</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="iA">all these words:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="advSearchInput" id="iA" name="as_q">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="iEx">this exact word or phrase:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="advSearchInput" id="iEx" name="as_epq">
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="iAny">any of these words:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="advSearchInput" id="iAny" name="as_oq">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="iNone">none of these words:</label>
+                    </div> 
+                    <div class="col">
+                        <input type="text" class="advSearchInput" id="iNone" name="as_eq">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm"></div>
+                    <div class="col">                       
+                        <input class=advSubmitBtn type="submit" value="Advanced Search">                               
+                    </div>
+                </div>
+            </form>  
+        </div>
+    </body>
+</html>
