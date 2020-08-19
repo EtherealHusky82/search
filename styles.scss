@@ -42,6 +42,8 @@ $fontFamily: arial,sans-serif;
     height: 20px;
     color:rgba(0,0,0,0.87);
     margin-right: 10px;
+    font-family: $fontFamily;
+    font-size: 14px;
 }
 .advSubmitBtn {
     background-color: #4d90fe;
